@@ -1,0 +1,67 @@
+Class Divisions {
+    constructor(x,y,w,h){
+        var options = {
+            isStatic: true
+        }
+    }
+}
+createCanvas(480,800);
+
+var particles = [];
+var plinkos = [];
+var divisions = [];
+
+var divisionHeight =300;
+
+for (var k = 0; k <=width; k = k + 80) {
+    divisions.push(new Divisions(k, height-divisionHeight/2, 10, divisionHeight));
+}
+
+
+this.body = Bodies.rectangle(x,y,w,h, options);
+this.w =w;
+this.h =h;
+World.add(world, this.body)
+}
+
+display() {
+    var pos = this.body.position;
+    rectMode(CENTER);
+    fill("white")
+    rect(pos.x,pos.y, this.w, this.h);
+}
+    
+    };
+
+    this.body = Bodies.circle(x, y, this.r,options);
+    this.color = color.circle(x, y, this.r,options);
+    this.color = color(random(0, 255, random(0, 255, random(0, 255));
+    World.add(world, this.body);
+
+
+
+for (var j = 40; j <=width; j=j+50)
+{
+    plinkos.push(new Plinko(j,75));
+}
+for (var j =15; j <=width-10; j=j+50)
+{
+
+    plinkos.push(new Plinko(j,175));
+}
+
+
+for (var j = 0; j < particles.length; j++) {
+    
+    particles[j].display();
+}
+for (var k = 0; k <divisions.length; k++) {
+    divisions[k].display();
+}
+}
+
+
+
+
+
+
